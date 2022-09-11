@@ -13,7 +13,7 @@ const MuiButton = () => {
         console.log({formats,});
     } 
   return (
-    <Stack spacing={4}>
+    <Stack spacing={4} direction="row" style={{height: '30px',marginBottom: '100px'}}>
       <Stack spacing={2} direction="row">
         <Button variant="contained">Text</Button>
         <Button variant="contained">Contained</Button>
@@ -40,7 +40,7 @@ const MuiButton = () => {
         </Button>
       </Stack>
 
-      <Stack display="block" spacing={2} direction="row">
+      <Stack display="block" spacing={3} direction="row" style={{marginRight:'10px'}}>
         <Button variant="contained" size="small" color="info">
           Info
         </Button>

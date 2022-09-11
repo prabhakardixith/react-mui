@@ -7,9 +7,9 @@ const MuiText = () => {
   return (
     <>
       <Stack spacing={2} direction="row" style={{marginLeft:'500px'}}>
-        <TextField id="" variant="outlined" label="first" value={null}/>
-        <TextField id="" variant="filled" label="second" value={null}/>
-        <TextField id="" variant="standard" label="third" value={null}/>
+        <TextField id="" variant="outlined" label="first" />
+        <TextField id="" variant="filled" label="second" />
+        <TextField id="" variant="standard" label="third" />
       </Stack>
 
       <Stack spacing={2} direction="row" style={{marginTop:'50px',marginLeft:'500px'}}>
