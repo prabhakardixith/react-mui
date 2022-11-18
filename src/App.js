@@ -1,19 +1,45 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MuiMain from "./mui/MuiMain";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import MuiLayout from "./mui/boxAndStack/MuiLayout";
+import Grids from "./mui/Grids";
+import { Routes, Route, Outlet } from "react-router-dom";
+import MuiCard from "./mui/MuiCard";
+import { MuiCardian } from "./mui/MuiCardian";
+import { MuiImageList } from "./mui/MuiImageList";
+import { MuiNavBar } from "./mui/MuiNavBar";
+import { MuiLink } from "./mui/MuiLink";
+import { MuiDrawer } from "./mui/MuiDrawer";
+import { MuiSpeedDial } from "./mui/MuiSpeedDial";
+import { MuiBottomNavtigation } from "./mui/MuiBottomNavtigation";
+import { MuiAvatar } from "./mui/MuiAvatar";
+import { MuiBadge } from "./mui/MuiBadge";
+import { MuiList } from "./mui/MuiList";
+import { MuiChip } from "./mui/MuiChip";
+
 function App() {
-  const [bodyColor, setBodyColor] = useState('white')
+  const [bodyColor, setBodyColor] = useState("white");
   useEffect(() => {
     document.title = "Material UI";
   }, []);
 
   return (
-    <div className="App">
-      <div style={{backgroundColor : `${bodyColor}`}}>
-        <MuiMain bodyColor={bodyColor} setBodyColor={setBodyColor}/>
-      </div>
-    </div>
+    <>
+      {/* <Grids/> */}
+      {/* <MuiCard/> */}
+      {/* <MuiCardian/> */}
+      {/* <MuiImageList/> */}
+      <MuiNavBar />
+      <MuiLink />
+      <MuiDrawer />
+      {/* <MuiSpeedDial/> */}
+      {/* <MuiBottomNavtigation/> */}
+      <MuiAvatar />
+      <MuiBadge/>
+      {/* <MuiList/> */}
+      <MuiChip/>
+    </>
   );
 }
 
