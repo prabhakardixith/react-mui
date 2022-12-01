@@ -17,6 +17,11 @@ import { MuiAvatar } from "./mui/MuiAvatar";
 import { MuiBadge } from "./mui/MuiBadge";
 import { MuiList } from "./mui/MuiList";
 import { MuiChip } from "./mui/MuiChip";
+import { MuiTable } from "./MuiTable";
+import { MuiAlert } from "./mui/MuiAlert";
+import { MuiSnackBar } from "./mui/MuiSnackBar";
+import { MuiDialog } from "./mui/MuiDialog";
+import MuiText from "./mui/MuiText";
 
 function App() {
   const [bodyColor, setBodyColor] = useState("white");
@@ -39,6 +44,12 @@ function App() {
       <MuiBadge/>
       {/* <MuiList/> */}
       <MuiChip/>
+      <MuiSnackBar/>
+      {/* <MuiText/> */}
+      <MuiDialog/>
+      <MuiAlert/>
+      <MuiTable/>
+      
     </>
   );
 }
